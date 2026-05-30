@@ -1,0 +1,188 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f0f0f, #2d2d2d, #1a1a1a);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 1.2s ease, filter 1.2s ease;
+    background-size: 400% 400%;
+    position: relative;
+    overflow: hidden;
+    touch-action: manipulation;
+}
+
+
+main {
+    width: 90%;
+    max-width: 400px;
+    max-height: 90vh;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.35), 0 0 20px rgba(255,255,255,0.05);
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.15);
+    animation: aparecer 0.8s ease;
+    transition: background 0.8s ease;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+main::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:-100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(120deg,transparent, rgba(255,255,255,0.15),transparent);
+    transform: skewX(-25deg);
+    animation: reflexo 4s linear infinite;
+}
+
+header h1{
+    margin: 0;
+    background: linear-gradient(135deg, #ffffff, #44a8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5em;
+}
+
+.search {
+    color: rgba(255, 255, 255, 0.685);
+    margin: 20px 0;
+}
+
+label {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color:rgba(255, 255, 255, 0.685);
+    border-radius: 3px;
+}   
+
+input[type="text"]{
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: solid 3px rgba(255, 255, 255, 0.685);
+    border-radius: 13px;
+    margin-bottom: 15px;
+}
+
+input[type="button"] {
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    background-color: #00000015;
+    color:#ffffff;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+input[type="text"]:focus{
+    border-color: #000000;
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+
+
+#imgClima {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 0 20px rgba(255,255,255,0.35));
+}
+
+#imgClima:hover {
+    transform: scale(1.08) rotate(0deg);
+}
+
+.weather{
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.weather-header{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.weather-main{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.weather-details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.weather-details p{
+    font-size: 2rem;
+}
+
+#cidadeNome{
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+#descricao{
+    font-style: italic;
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+#temperatura{
+    font-size: 2.7rem;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+#clockTimer{
+    font-weight: bold;
+    position: absolute;
+    width: 200px;
+
+    top: 134px; 
+    right: 25px;
+
+    font-size: 2.8rem;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1.1;
+
+    text-align: center;
+
+}

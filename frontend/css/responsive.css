@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+
+    main{
+        width: 92%;
+        padding: 20px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    #temperatura{
+        font-size: 2.2rem;
+    }
+
+    .sol-img{
+        width: 300px;
+    }
+
+}

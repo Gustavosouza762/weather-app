@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Clima</title>
+    <link rel="stylesheet" href="/frontend/css/style.css">
+    <link rel="stylesheet" href="/frontend/css/weather.css">
+    <link rel="stylesheet" href="/frontend/css/animation.css">
+    <link rel="stylesheet" href="/frontend/css/responsive.css">
+    <script src="/frontend/js/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="sun-container">
+        <img src="/frontend/assets/images/sol_png.png" alt="Sol" class="sol-img">
+    </div>
+    <video autoplay muted loop class="rainyVideo" id="rainyVideo">
+        <source src="/frontend/assets/videos/chuva_mp4.mp4" type="video/mp4">
+    </video>
+    <video autoplay muted loop class="cloudyVideo" id="cloudyVideo">
+        <source src="/frontend/assets/videos/nublado_mp4.mp4" type="video/mp4">
+    </video>
+    <main>
+        <header>
+            <h1>CLIMA</h1>
+        </header>
+        <section class="search">
+            <label for="inputCidade">Cidade:</label>
+            <input type="text" id="inputCidade" placeholder="Digite sua Cidade">
+            <input type="button" id="btnBuscar" value="Buscar">
+        </section>
+        <section class="weather">
+            <div class="weather-header">
+                <img id="imgClima" alt="Ícone do clima">
+            </div>
+            <div class="weather-main">
+                <h2 id="cidadeNome">Cidade:</h2>
+                <p id="temperatura">Cº: </p>
+                <p id="descricao">Descrição:</p>
+            </div>
+            <p id="clockTimer">Horário local: --:--</p>
+        </section>
+        <section class="feedback">
+            <p style="display: none;" id="erro">Cidade não encontrada</p>   
+            <p style="display: none;" id="loading">Carregando...</p> 
+        </section>
+    </main>
+    
+</body>
+</html>

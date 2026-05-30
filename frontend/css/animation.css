@@ -1,0 +1,38 @@
+main:hover {
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.507);
+    transform:translateY(-8px) ;
+}
+
+input[type="button"]:hover {
+    transform: scale(1.08);
+    background: linear-gradient(145deg, #0000008f, #0088ff);
+    color:#fffbfb;
+    box-shadow: 0 0 20px rgba(56, 56, 56, 0.5);
+    
+}
+
+.weather.weather.sunny-weather:hover {
+    box-shadow: 0 5px 30px rgba(92, 90, 90, 0.24);
+    transform:translateY(-5px) ;
+}
+
+.weather.weather.cloudy-weather:hover {
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.24);
+    transform:translateY(-5px) ;
+}
+
+.weather.weather.rainy-weather:hover {
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.24);
+    transform:translateY(-5px) ;
+}
+
+@keyframes reflexo{
+
+    0%{
+        left: -120%;
+    }
+
+    100%{
+        left: 150%;
+    }
+}
