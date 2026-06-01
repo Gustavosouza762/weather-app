@@ -61,7 +61,7 @@ try {
         body.classList.add("sunny");
         weather.classList.add("sunny-weather");
         sunContainer.style.opacity = "1";
-    }else if (["Clouds", "Mist", "Fog", "Haze", "Smoke"].includes(climaAtual)){{
+    }else if (["Clouds",].includes(climaAtual)){{
         body.classList.add("cloudy");
         weather.classList.add("cloudy-weather");
         cloudyVideo.style.opacity = "1";
