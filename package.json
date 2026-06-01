@@ -15,5 +15,13 @@
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "node-fetch": "^3.3.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gustavosouza762/weather-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Gustavosouza762/weather-app/issues"
+  },
+  "homepage": "https://github.com/Gustavosouza762/weather-app#readme"
 }

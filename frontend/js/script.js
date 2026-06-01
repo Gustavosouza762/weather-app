@@ -61,10 +61,11 @@ try {
         body.classList.add("sunny");
         weather.classList.add("sunny-weather");
         sunContainer.style.opacity = "1";
-    }else if(climaAtual === "Clouds"){ 
+    }else if (["Clouds", "Mist", "Fog", "Haze", "Smoke"].includes(climaAtual)){{
         body.classList.add("cloudy");
         weather.classList.add("cloudy-weather");
         cloudyVideo.style.opacity = "1";
+    }
     }else if(climaAtual === "Rain"){
         body.classList.add("rainy");
         rainyVideo.style.opacity = "1";
