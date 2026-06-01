@@ -35,7 +35,7 @@ async function buscarClima() {
     erro.style.display = "none";
     loading.style.display = "block";
     btnBuscar.disabled = true;
-    const url= `http://localhost:3000/clima/${cidade}`;
+    const url = `https://weather-app-1-hp0e.onrender.com/clima/${cidade}`;
 
 try {
 
